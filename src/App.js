@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React,{ Component } from 'react';
+//import { Button, message } from 'antd';
+import {BrowserRouter,Route,Switch} from 'react-router-dom';
+import Login from './pages/login/login';
+import Admin from './pages/admin/admin';
+/**
+ * 应用的根组件
+ * 简单定义：函数
+ * 复杂定义：类
+ * 区别在于有咩有状态
+ */
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+ export default class App extends Component{
 
-export default App;
+ 
+    render(){
+        return(
+            <BrowserRouter>
+                <Switch>
+                    <Route path='/login' component={Login}></Route>{ /**一个前台路由是一个映射关系，有path和component两个属性 */}
+                    <Route path='/' component={Admin}></Route>
+                </Switch>
+            </BrowserRouter>     
+        )
+    }
+ }
+ 
