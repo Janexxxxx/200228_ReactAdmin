@@ -19,9 +19,9 @@ jobs:
 
       - name: 安装node.js
         # 使用action库  actions/setup-node安装node
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: 16.17.0
+          node-version: 20.5.0
 
       - name: 安装npm
         run: npm install -g npm
