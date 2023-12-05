@@ -19,9 +19,9 @@ jobs:
 
       - name: 安装node.js
         # 使用action库  actions/setup-node安装node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v2
         with:
-          node-version: 18.17.0
+          node-version: 16.17.0
 
       - name: 安装npm
         run: npm install -g npm
@@ -34,8 +34,8 @@ jobs:
       - name: 打包
         run: npm run build
 
-      # 上传到阿里云
-      - name: 发布到阿里云
+      # 上传到腾讯云
+      - name: 发布到腾讯云
         uses: easingthemes/ssh-deploy@main
         with:
           # 私钥
