@@ -21,7 +21,7 @@ jobs:
         # 使用action库  actions/setup-node安装node
         uses: actions/setup-node@v3
         with:
-          node-version: 16.14.0
+          node-version: 18.17.0
 
       - name: 安装npm
         run: npm install -g npm
