@@ -14,12 +14,12 @@ jobs:
       # 获取代码
       - name: 迁出代码
         # 使用action库 action/checkout获取代码
-        uses: actions/checkout@v4
+        uses: actions/checkout
       # 安装Node18
 
       - name: 安装node.js
         # 使用action库  actions/setup-node安装node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node
         with:
           node-version: 20.5.0
 
