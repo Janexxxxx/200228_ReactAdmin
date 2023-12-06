@@ -13,7 +13,7 @@
     "draftjs-to-html": "^0.9.1",
     "jsonp": "^0.2.1",
     "less": "^3.11.1",
-    "less-loader": "^5.0.0",
+    "less-loader": "^6.2.0",
     "react": "^16.13.0",
     "react-app-rewired": "^2.1.5",
     "react-dom": "^16.13.0",
